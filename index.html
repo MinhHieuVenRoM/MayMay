@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thôi Nôi Bé Mây ☁️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Petals animation -->
+  <div class="petals" aria-hidden="true" id="petals"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">✨ Một năm yêu thương ✨</p>
+      <h1 class="hero-title">Thôi Nôi<br /><span>Bé Mây </span></h1>
+      <p class="hero-date">6 · 5 · 2026 (AL)</p>
+
+      <div class="hero-photo-frame">
+        <div class="hero-photo">
+          <!-- Thay src="photos/main.jpg" bằng ảnh của bé -->
+          <img src="photos/main.jpg" alt="Bé Mây" onerror="this.parentElement.classList.add('placeholder')" />
+          <div class="hero-photo-placeholder">
+            <span>☁️</span>
+            <p>Thêm ảnh:<br /><code>photos/main.jpg</code></p>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-quote">"Con là ánh nắng ấm áp nhất<br />mà ba mẹ từng được nhận."</p>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- TIMELINE / MILESTONES -->
+  <section class="milestones section">
+    <h2 class="section-title">Hành Trình Một Năm</h2>
+    <div class="timeline">
+
+      <div class="milestone">
+        <div class="milestone-photo">
+          <img src="photos/month1.jpg" alt="Tháng 1" onerror="this.parentElement.classList.add('placeholder')" />
+          <div class="photo-placeholder"><span>🍼</span></div>
+        </div>
+        <div class="milestone-info">
+          <span class="milestone-tag">Tháng 1</span>
+          <p>Chào thế giới, bé ơi!</p>
+        </div>
+      </div>
+
+      <div class="milestone reverse">
+        <div class="milestone-photo">
+          <img src="photos/month3.jpg" alt="Tháng 3" onerror="this.parentElement.classList.add('placeholder')" />
+          <div class="photo-placeholder"><span>😊</span></div>
+        </div>
+        <div class="milestone-info">
+          <span class="milestone-tag">Tháng 3</span>
+          <p>Nụ cười đầu tiên của bé!</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-photo">
+          <img src="photos/month6.jpg" alt="Tháng 6" onerror="this.parentElement.classList.add('placeholder')" />
+          <div class="photo-placeholder"><span>🐣</span></div>
+        </div>
+        <div class="milestone-info">
+          <span class="milestone-tag">Tháng 6</span>
+          <p>Bé biết lật, ngồi và bắt đầu ăn dặm.</p>
+        </div>
+      </div>
+
+      <div class="milestone reverse">
+        <div class="milestone-photo">
+          <img src="photos/month9.jpg" alt="Tháng 9" onerror="this.parentElement.classList.add('placeholder')" />
+          <div class="photo-placeholder"><span>🚀</span></div>
+        </div>
+        <div class="milestone-info">
+          <span class="milestone-tag">Tháng 9</span>
+          <p>Bé bò siêu tốc khắp nhà!</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-photo">
+          <img src="photos/month12.jpg" alt="Tháng 12" onerror="this.parentElement.classList.add('placeholder')" />
+          <div class="photo-placeholder"><span>🎂</span></div>
+        </div>
+        <div class="milestone-info">
+          <span class="milestone-tag">Tháng 12</span>
+          <p>Tròn 1 tuổi! Bé tập đứng và bi bô nói.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="gallery section">
+    <h2 class="section-title">Khoảnh Khắc Đáng Nhớ</h2>
+    <p class="section-sub">Mỗi tấm ảnh là một kỷ niệm không thể nào quên</p>
+    <div class="gallery-grid" id="gallery">
+      <!-- Thêm ảnh vào thư mục photos/ và đặt tên g1.jpg, g2.jpg … -->
+      <div class="gallery-item"><img src="photos/g1.jpg" alt="Khoảnh khắc 1" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item tall"><img src="photos/g2.jpg" alt="Khoảnh khắc 2" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g3.jpg" alt="Khoảnh khắc 3" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item wide"><img src="photos/g4.jpg" alt="Khoảnh khắc 4" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g5.jpg" alt="Khoảnh khắc 5" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g6.jpg" alt="Khoảnh khắc 6" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item tall"><img src="photos/g7.jpg" alt="Khoảnh khắc 7" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g8.jpg" alt="Khoảnh khắc 8" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+    </div>
+  </section>
+
+  <!-- PHOTO STORY SLIDESHOW -->
+  <section class="story section">
+    <h2 class="section-title">Câu Chuyện Của Bé</h2>
+    <p class="section-sub">Nhấn mũi tên để xem từng khoảnh khắc</p>
+
+    <div class="slideshow-wrapper">
+      <button class="slide-btn prev" aria-label="Ảnh trước" onclick="changeSlide(-1)">&#8592;</button>
+
+      <div class="slideshow">
+        <div class="slide active">
+          <div class="slide-photo">
+            <img src="photos/story1.jpg" alt="Câu chuyện 1" onerror="this.parentElement.classList.add('placeholder')" />
+            <div class="photo-placeholder"><span>🌱</span></div>
+          </div>
+          <div class="slide-caption">
+            <span class="slide-num">01 / 05</span>
+            <h3>Những Ngày Đầu Tiên</h3>
+            <p>Bé nằm im lặng trong vòng tay ba mẹ, nhỏ xíu và thơm tho như một đoá hoa mới nở.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-photo">
+            <img src="photos/story2.jpg" alt="Câu chuyện 2" onerror="this.parentElement.classList.add('placeholder')" />
+            <div class="photo-placeholder"><span>☀️</span></div>
+          </div>
+          <div class="slide-caption">
+            <span class="slide-num">02 / 05</span>
+            <h3>Nụ Cười Thiên Thần</h3>
+            <p>Ngày bé lần đầu cười, cả nhà như được chiếu sáng bởi một tia nắng ấm áp nhất.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-photo">
+            <img src="photos/story3.jpg" alt="Câu chuyện 3" onerror="this.parentElement.classList.add('placeholder')" />
+            <div class="photo-placeholder"><span>🌊</span></div>
+          </div>
+          <div class="slide-caption">
+            <span class="slide-num">03 / 05</span>
+            <h3>Khám Phá Thế Giới</h3>
+            <p>Đôi mắt tròn xoe nhìn mọi thứ xung quanh – bé đang dần khám phá thế giới kỳ diệu này.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-photo">
+            <img src="photos/story4.jpg" alt="Câu chuyện 4" onerror="this.parentElement.classList.add('placeholder')" />
+            <div class="photo-placeholder"><span>🎵</span></div>
+          </div>
+          <div class="slide-caption">
+            <span class="slide-num">04 / 05</span>
+            <h3>Tiếng Bi Bô Đầu Tiên</h3>
+            <p>Ba mẹ đã thuộc lòng từng âm thanh nhỏ bé ấy – mỗi tiếng "ba", "mẹ" là cả một bầu trời hạnh phúc.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-photo">
+            <img src="photos/story5.jpg" alt="Câu chuyện 5" onerror="this.parentElement.classList.add('placeholder')" />
+            <div class="photo-placeholder"><span>🎂</span></div>
+          </div>
+          <div class="slide-caption">
+            <span class="slide-num">05 / 05</span>
+            <h3>Tròn Một Tuổi!</h3>
+            <p>Một năm trôi qua nhanh quá – bé đã lớn lên từng ngày trong yêu thương của gia đình. Chúc bé mạnh khỏe, hay ăn chóng lớn!</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="slide-btn next" aria-label="Ảnh tiếp theo" onclick="changeSlide(1)">&#8594;</button>
+    </div>
+
+    <div class="slide-dots" id="dots"></div>
+  </section>
+
+  <!-- WISHES -->
+  <section class="wishes section">
+    <h2 class="section-title">Lời Chúc Yêu Thương</h2>
+    <div class="wishes-grid">
+      <div class="wish-card">
+        <span class="wish-icon">💖</span>
+        <p class="wish-from">Ba &amp; Mẹ</p>
+        <p>"Con là món quà quý giá nhất mà cuộc đời ban tặng cho chúng ta. Ba mẹ yêu con vô cùng!"</p>
+      </div>
+      <div class="wish-card">
+        <span class="wish-icon">☁️</span>
+        <p class="wish-from">Ông &amp; Bà</p>
+        <p>"Cháu ơi, lớn lên thật ngoan nhé. Ông bà luôn ở bên cháu mỗi bước đường."</p>
+      </div>
+      <div class="wish-card">
+        <span class="wish-icon">⭐</span>
+        <p class="wish-from">Cả Gia Đình</p>
+        <p>"Chúc bé Mây mạnh khỏe, hay cười, lớn lên thành người hạnh phúc và tốt bụng."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Đóng">&times;</button>
+    <img id="lightbox-img" src="" alt="Phóng to ảnh" />
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>☁️ Mây · 1 tuổi · 2026 ☁️</p>
+    <p class="footer-sub">Made with love by Ba &amp; Mẹ</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
