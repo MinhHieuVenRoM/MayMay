@@ -106,13 +106,17 @@
     <div class="gallery-grid" id="gallery">
       <!-- Thêm ảnh vào thư mục photos/ và đặt tên g1.jpg, g2.jpg … -->
       <div class="gallery-item"><img src="photos/g1.jpg" alt="Khoảnh khắc 1" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
-      <div class="gallery-item tall"><img src="photos/g2.jpg" alt="Khoảnh khắc 2" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g2.jpg" alt="Khoảnh khắc 2" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
       <div class="gallery-item"><img src="photos/g3.jpg" alt="Khoảnh khắc 3" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
-      <div class="gallery-item wide"><img src="photos/g4.jpg" alt="Khoảnh khắc 4" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g4.jpg" alt="Khoảnh khắc 4" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
       <div class="gallery-item"><img src="photos/g5.jpg" alt="Khoảnh khắc 5" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
       <div class="gallery-item"><img src="photos/g6.jpg" alt="Khoảnh khắc 6" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
-      <div class="gallery-item tall"><img src="photos/g7.jpg" alt="Khoảnh khắc 7" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g7.jpg" alt="Khoảnh khắc 7" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
       <div class="gallery-item"><img src="photos/g8.jpg" alt="Khoảnh khắc 8" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g9.jpg" alt="Khoảnh khắc 9" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g10.jpg" alt="Khoảnh khắc 10" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g11.jpg" alt="Khoảnh khắc 11" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><img src="photos/g12.jpg" alt="Khoảnh khắc 12" onerror="this.parentElement.classList.add('placeholder')" /><div class="photo-placeholder"><span>📸</span></div></div>
     </div>
   </section>
 
@@ -214,6 +218,25 @@
     </div>
   </section>
 
+  <!-- GUESTBOOK -->
+  <section class="guestbook section">
+    <h2 class="section-title">Gửi Lời Chúc Cho Bé</h2>
+    <p class="section-sub">Để lại lời chúc yêu thương — bé sẽ đọc khi lớn lên 💕</p>
+
+    <form class="gb-form" id="gbForm">
+      <div class="gb-fields">
+        <input  class="gb-input" id="gbName"    type="text"     placeholder="Tên của bạn" maxlength="40" required />
+        <textarea class="gb-input gb-textarea" id="gbMsg" placeholder="Lời chúc của bạn…" maxlength="300" rows="3" required></textarea>
+      </div>
+      <button class="gb-btn" type="submit" id="gbSubmit">Gửi lời chúc ☁️</button>
+      <p class="gb-status" id="gbStatus"></p>
+    </form>
+
+    <div class="gb-list" id="gbList">
+      <div class="gb-loading">Đang tải lời chúc…</div>
+    </div>
+  </section>
+
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()" aria-label="Đóng">&times;</button>
@@ -226,6 +249,10 @@
     <p class="footer-sub">Made with love by Ba &amp; Mẹ</p>
   </footer>
 
+  <!-- Firebase SDK (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="firebase.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
